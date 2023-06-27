@@ -45,7 +45,8 @@ body {
   line-height: 8rem;
   font-weight: 900;
   text-transform: uppercase;
-  background: linear-gradient(90deg, #ec533c88, #ec533cc9),
+  background:
+    linear-gradient(90deg, #ec533c88, #ec533cc9),
     url(./images/background/background-image-0.jpg) 0 0 / cover no-repeat;
   color: var(--color-primary);
   -webkit-background-clip: text;
@@ -130,7 +131,8 @@ body {
 
 .header {
   height: 100vh;
-  background-image: linear-gradient(
+  background-image:
+    linear-gradient(
       90deg,
       rgb(255, 255, 255),
       rgba(212, 212, 212, 0.224)
@@ -222,7 +224,8 @@ body {
 
 /***  style services **/
 .services {
-  background-image: linear-gradient(
+  background-image:
+    linear-gradient(
       90deg,
       rgba(0, 0, 0, 0.9),
       rgba(0, 0, 0, 0.9)

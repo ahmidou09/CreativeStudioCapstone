@@ -129,11 +129,13 @@ body {
 .w-small {
   width: 4rem;
 }
+
 /* style header */
 
 .header {
   min-height: 80vh;
-  background-image: linear-gradient(45deg, #fcf6fb93, #fcf6fb93),
+  background-image:
+    linear-gradient(45deg, #fcf6fb93, #fcf6fb93),
     url("../images/background/background-image-3.jpg");
   background-size: cover;
 }
@@ -245,6 +247,7 @@ body {
   display: flex;
   flex-direction: column;
 }
+
 .log-text span {
   font-size: 3rem;
   color: var(--color-grey-dark);
@@ -256,7 +259,8 @@ body {
 .box-previous {
   width: 100%;
   height: 28rem;
-  background-image: linear-gradient(
+  background-image:
+    linear-gradient(
       0deg,
       rgba(236, 83, 60, 0.7),
       rgba(236, 83, 60, 0.7)
@@ -275,6 +279,7 @@ body {
   font-size: 4rem;
   font-weight: 900;
 }
+
 .box-previous-text {
   display: block;
   color: var(--color-white);
@@ -318,6 +323,7 @@ body {
   display: flex;
   flex-direction: column;
 }
+
 .footer-log-text span {
   font-size: 1.6rem;
   color: var(--color-grey-dark);
