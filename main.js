@@ -7,4 +7,3 @@ navToggle.addEventListener('click', () => {
   menuIcon.classList.toggle('fa-times');
   menuIcon.classList.toggle('fa-bars');
 });
-
