@@ -150,31 +150,6 @@ body {
 }
 
 /* style header */
-
-.sub-header {
-  height: 4rem;
-  padding: 0 2rem;
-  background-color: var(--color-grey-dark);
-  display: none;
-  align-items: center;
-  justify-content: end;
-}
-
-.sub-header-list {
-  display: flex;
-  align-items: center;
-  gap: 3rem;
-}
-
-.sub-header-item {
-  cursor: pointer;
-}
-
-.sub-header-item:hover a,
-.sub-header-item:hover a i {
-  color: var(--color-primary);
-}
-
 .sub-header-item a {
   color: var(--color-white);
   font-size: 1.6rem;
@@ -189,7 +164,8 @@ body {
 
 .header {
   height: 100vh;
-  background-image: linear-gradient(
+  background-image:
+    linear-gradient(
       90deg,
       rgb(255, 255, 255),
       rgba(212, 212, 212, 0.224)
@@ -322,7 +298,8 @@ body {
 .box-previous {
   width: 100%;
   height: 28rem;
-  background-image: linear-gradient(
+  background-image:
+    linear-gradient(
       0deg,
       rgba(236, 83, 60, 0.7),
       rgba(236, 83, 60, 0.7)
@@ -412,6 +389,7 @@ body {
     max-width: 120rem;
     margin: 0 auto;
   }
+
   .row,
   .row-header {
     flex-direction: row;
@@ -446,7 +424,6 @@ body {
   }
 
   .headline {
-    width: 80vw;
     display: flex;
     flex-direction: column;
     gap: 2rem;
