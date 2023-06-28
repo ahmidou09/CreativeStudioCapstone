@@ -26,9 +26,9 @@ Module 1 Capstone Project - communication agency (HTML, CSS & JAVASCRIPT)
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 [Creative_Studio_Capston - Module 1 Capstone Project - communication agency (HTML, CSS & JAVASCRIPT).] <a name="about-project"></a>
+# 📖 Creative_Studio_Capston - Module 1 Capstone Project - communication agency (HTML, CSS & JAVASCRIPT). <a name="about-project"></a>
 
-**Creative_Studio_Capstone** It's a creative communication agency, responsive web site! This is a Capstone Project to include all learning topics of Microverse Program's Module 1. First branch: Setup project.
+**Creative_Studio_Capstone** It's a creative communication agency, responsive web site! This is a Capstone Project to include all learning topics of Microverse Program's Module 1.
 
 
 ## 🛠️ Built With <a name="built-with">
