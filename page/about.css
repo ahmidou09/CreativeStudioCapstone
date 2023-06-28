@@ -29,7 +29,7 @@ a {
 }
 
 html {
-  font-size: 62.5%;
+  font-size: 50%;
 }
 
 /* typography */
@@ -379,6 +379,10 @@ body {
 }
 
 @media screen and (min-width: 768px) {
+  html {
+    font-size: 62.5%;
+  }
+
   .navigation {
     background: var(--color-white);
     box-shadow: var(--shadow-light);
