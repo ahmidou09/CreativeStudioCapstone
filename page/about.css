@@ -1,8 +1,13 @@
+@import url("https://fonts.cdnfonts.com/css/cocogoose");
+
 :root {
   --color-primary: rgb(236, 82, 60);
   --color-grey-light: #d3d3d3;
+  --color-grey-light-2: #f3f3f3;
   --color-grey-dark: #272a31;
+  --color-grey-dark-2: #626262;
   --color-white: #fff;
+  --font-cocogoose: "COCOGOOSE", sans-serif;
   --shadow-dark: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.1);
   --shadow-light: 0 0.5rem 15rem rgba(0, 0, 0, 0.2);
   --transition: all 0.2s linear;
@@ -40,18 +45,21 @@ body {
 }
 
 .heading-primary {
-  font-size: 5.2rem;
-  line-height: 8rem;
+  font-family: var(--font-cocogoose);
+  font-size: 6.6rem;
+  line-height: 1.1;
   font-weight: 900;
   text-transform: uppercase;
   color: var(--color-primary);
+  max-width: 100%;
 }
 
 .heading-secondary {
   font-weight: 900;
-  color: var(--color-grey-dark);
-  font-size: 3rem;
-  text-transform: uppercase;
+  color: var(--color-grey-dark-2);
+  letter-spacing: var(--spacing);
+  font-size: 1.6rem;
+  text-transform: capitalize;
 }
 
 .heading-tertiary {
@@ -253,8 +261,10 @@ body {
 
 .sub-title-2 {
   color: var(--color-grey-dark);
-  font-size: 2.5rem;
+  font-size: 2rem;
   text-transform: capitalize;
+  text-decoration: underline;
+  font-weight: 700;
 }
 
 .section-1,
@@ -345,18 +355,24 @@ body {
 }
 
 .footer {
+  display: block;
+  padding: 4rem 6rem;
+  background-color: var(--color-white);
+}
+
+.footer-box {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   gap: 4rem;
-  padding: 4rem 6rem;
 }
 
 .footer-box-log {
   display: flex;
   align-items: center;
-  justify-content: start;
+  justify-content: end;
   gap: 0.5rem;
-  flex: 0 1 50%;
+  flex: 0 0 30%;
 }
 
 .footer-log-text {
@@ -365,7 +381,7 @@ body {
 }
 
 .footer-log-text span {
-  font-size: 1.6rem;
+  font-size: 2rem;
   color: var(--color-grey-dark);
   text-transform: capitalize;
   font-weight: 900;
@@ -381,6 +397,10 @@ body {
 @media screen and (min-width: 768px) {
   html {
     font-size: 62.5%;
+  }
+
+  .header {
+    height: 100vh;
   }
 
   .navigation {
@@ -442,5 +462,21 @@ body {
   .box-previous-container {
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 2rem;
+  }
+
+  .partner {
+    display: none;
+  }
+
+  .footer {
+    background-color: var(--color-grey-dark);
+  }
+
+  .footer-log-text span {
+    color: var(--color-white);
+  }
+
+  .copy {
+    color: var(--color-white);
   }
 }
