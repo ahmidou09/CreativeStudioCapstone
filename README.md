@@ -56,7 +56,7 @@ Module 1 Capstone Project - communication agency (HTML, CSS & JAVASCRIPT)
 🚀 Live Demo
 Link to our deployed project.
 
-- https://#
+- https://ahmidou09.github.io/CreativeStudioCapstone/
 
 <!-- GETTING STARTED -->
 
