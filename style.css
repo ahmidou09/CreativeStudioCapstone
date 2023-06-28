@@ -1,9 +1,14 @@
+@import url("https://fonts.cdnfonts.com/css/cocogoose");
+
 /* variable */
 :root {
   --color-primary: rgb(236, 82, 60);
   --color-grey-light: #d3d3d3;
+  --color-grey-light-2: #f3f3f3;
   --color-grey-dark: #272a31;
+  --color-grey-dark-2: #626262;
   --color-white: #fff;
+  --font-cocogoose: "COCOGOOSE", sans-serif;
   --shadow-dark: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.1);
   --shadow-light: 0 0.5rem 15rem rgba(0, 0, 0, 0.2);
   --transition: all 0.2s linear;
@@ -30,7 +35,7 @@ a {
 }
 
 html {
-  font-size: 62.5%;
+  font-size: 50%;
 }
 
 /* typography */
@@ -41,12 +46,17 @@ body {
 }
 
 .heading-primary {
-  font-size: 6rem;
-  line-height: 8rem;
-  font-weight: 900;
+  font-size: 6.6rem;
+  max-width: 100%;
+  font-family: var(--font-cocogoose);
+  line-height: 1.1;
   text-transform: uppercase;
   background:
-    linear-gradient(90deg, #ec533c88, #ec533cc9),
+    linear-gradient(
+      0deg,
+      rgba(236, 83, 66, 0.5),
+      rgba(236, 83, 66, 0.7)
+    ),
     url(./images/background/background-image-0.jpg) 0 0 / cover no-repeat;
   color: var(--color-primary);
   -webkit-background-clip: text;
@@ -55,8 +65,9 @@ body {
 
 .heading-secondary {
   font-weight: 900;
-  color: var(--color-grey-dark);
-  font-size: 3rem;
+  color: var(--color-grey-dark-2);
+  font-family: var(--font-cocogoose);
+  font-size: 3.2rem;
   text-transform: uppercase;
 }
 
@@ -245,24 +256,28 @@ body {
 }
 
 .headline {
+  margin-top: 4rem;
   padding: 1rem;
 }
 
 .headline-paragraph {
   padding: 1rem;
-  border: 2px groove var(--color-white);
-  background-color: rgba(255, 255, 255, 0.9);
+  border: 4px solid var(--color-white);
+  background-color: var(--color-grey-light-2);
+  color: var(--color-grey-dark-2);
+  max-width: 100%;
 }
 
 .sub-title-1 {
-  font-size: 3rem;
+  font-size: 3.6rem;
   color: var(--color-primary);
 }
 
 .sub-title-2 {
-  color: var(--color-grey-dark);
-  font-size: 2.5rem;
+  color: var(--color-grey-dark-2);
+  font-size: 2rem;
   text-transform: capitalize;
+  font-weight: 600;
 }
 
 /***  style services **/
@@ -376,9 +391,12 @@ body {
 }
 
 .btn-see-more {
-  padding: 1rem 4rem;
   background-color: transparent;
-  border: 2px solid var(--color-grey-dark);
+  border: 2px solid var(--color-grey-dark-2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem 4rem;
   width: 90%;
 }
 
@@ -392,6 +410,7 @@ body {
   color: var(--color-primary);
   font-size: 1.6rem;
   margin-left: 2rem;
+  transform: translateY(2px);
 }
 
 .partner {
@@ -413,18 +432,22 @@ body {
 
 .footer {
   display: none;
+  padding: 4rem 6rem;
+}
+
+.footer-box {
+  display: flex;
   justify-content: space-between;
   align-items: center;
   gap: 4rem;
-  padding: 4rem 6rem;
 }
 
 .footer-box-log {
   display: flex;
   align-items: center;
-  justify-content: start;
+  justify-content: end;
   gap: 0.5rem;
-  flex: 0 0 40%;
+  flex: 0 0 30%;
 }
 
 .footer-log-text {
@@ -433,7 +456,7 @@ body {
 }
 
 .footer-log-text span {
-  font-size: 3rem;
+  font-size: 2rem;
   color: var(--color-grey-dark);
   text-transform: capitalize;
   font-weight: 900;
@@ -468,8 +491,24 @@ body {
 }
 
 @media screen and (min-width: 768px) {
+  html {
+    font-size: 62.5%;
+  }
+
   .sub-header {
     display: flex;
+  }
+
+  .heading-primary {
+    max-width: 80%;
+  }
+
+  .headline-paragraph {
+    max-width: 80%;
+  }
+
+  .header {
+    min-height: 100vh;
   }
 
   .navigation {
@@ -518,7 +557,7 @@ body {
   }
 
   .headline {
-    width: 80vw;
+    margin-top: 0;
     display: flex;
     flex-direction: column;
   }
@@ -532,11 +571,25 @@ body {
     flex-direction: column;
     gap: 1rem;
     text-align: center;
+    min-height: 30rem;
   }
 
   .box:hover {
     border: 1px solid var(--color-white);
     transition: var(--transition);
+  }
+
+  .btn-primary {
+    background-color: transparent;
+    text-transform: uppercase;
+    text-decoration: underline;
+    font-size: 2rem;
+    font-weight: 300;
+    letter-spacing: var(--spacing);
+  }
+
+  .btn-primary:hover {
+    background-color: transparent;
   }
 
   .team {
