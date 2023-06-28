@@ -172,4 +172,13 @@ Thanks to my learning partners and the staff at Microverse.
 
 This project is [MIT](./LICENSE.md) licensed.
 
+## Design Credit
+
+The design used in this project was created by Cindy Shin and is available on Behance. The original design can be found at the following link:
+
+[Original Design by Cindy Shin](https://www.behance.net/adagio07)
+
+Please note that the design is licensed under the Creative Commons license, and proper attribution to the author is mandatory.
+
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
